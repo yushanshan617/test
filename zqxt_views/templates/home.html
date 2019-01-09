@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>房源数据展示</h1>
+    <table>
+    <tr>
+        <th>用户名</th>
+        <th>密码</th>
+        <th>年龄</th>
+    </tr>
+    {% for line in people_list %}
+        <tr>
+            <li>
+                <td>{{line.username}}</td>
+            </li>
+            <li>
+                <td>{{line.password}}</td>
+            </li>
+            <li>
+                <td>{{line.age}}</td>
+            </li>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

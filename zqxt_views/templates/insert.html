@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <style type="text/css">
+        .dic1{
+            background: coral;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<dev class="dic1">
+    <form action="/insert/" method="post">
+        {% csrf_token %}
+        <td>
+            用户名：
+        <input type="text" name="username"/>
+        </td>
+        <br>
+        <td>
+            密码：
+            <input type="password" name="password"/>
+        </td>
+        <input type="submit" value="提交">
+        <br>
+        <a href="/home">查看数据</a>
+    </form>
+</dev>
+</body>
+</html>
